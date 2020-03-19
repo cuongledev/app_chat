@@ -68,7 +68,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
         }
 
         if (position == mChat.size()-1){
-            if (chat.getIsseen()){
+            if (chat.isIsseen()){
                 holder.txt_seen.setText("Đã xem");
             }else{
                 holder.txt_seen.setText("Đã gửi");
